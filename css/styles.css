@@ -693,7 +693,7 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
   align-items: center;
   gap: 16px;
 }
-.social-icon-link{
+.icon-link{
   background-color: var(--blue-brand-color);
   justify-content: center;
 }
@@ -703,7 +703,7 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
 
 .icon-link:focus {
   background-color: var(--hover-link-color);
-  background-color: #31d0aa; 
+  
 }
 .footer {
   display: flex;
