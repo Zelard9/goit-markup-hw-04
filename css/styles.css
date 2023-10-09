@@ -444,10 +444,10 @@ img {
   justify-content: center;
   align-items: center;
 }
-.icon-link:hover , :focus{
+.icon-link:hover {
 background-color: var(--order-but-color);
 }
-.icon-link:focus{
+.icon-link:focus {
 background-color: var(--order-but-color);
 }
 .team-icon {
@@ -697,12 +697,13 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
   background-color: var(--blue-brand-color);
   justify-content: center;
 }
-.social-icon-link:hover{
+.icon-link:hover{
   background-color: var(--hover-link-color);
 }
 
-.social-icon-link:focus{
+.icon-link:focus {
   background-color: var(--hover-link-color);
+  background-color: #31d0aa; 
 }
 .footer {
   display: flex;
