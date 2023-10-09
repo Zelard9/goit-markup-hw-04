@@ -85,6 +85,7 @@ img {
 }
 
 .header-link {
+  position: relative;
   padding: 24px 0;
   display: block;
   text-decoration: none;
@@ -92,8 +93,10 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--black-brand-color);
+  color: var(--order-but-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .header-link:hover,
 .header-link:focus {
@@ -123,12 +126,12 @@ img {
   color: var(--blue-brand-color);
 }
 .header-link::after{
-  content: " ";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
-  border-color: var(--order-but-color);
+  background-color: var(--order-but-color);
   border-radius: 2px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -438,10 +441,13 @@ img {
   background-color: var(--blue-brand-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .icon-link:hover , :focus{
+background-color: var(--order-but-color);
+}
+.icon-link:focus{
 background-color: var(--order-but-color);
 }
 .team-icon {
@@ -558,6 +564,7 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
 .cover-text-wrap {
   position: relative;
   overflow: hidden;
+
 }
 
 .cover-text-container {
@@ -575,7 +582,8 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
 }
 
 .cover-text {
- 
+ width: 100%;
+ height: 100%;
 
   font-size: 16px;
   font-weight: 400;
@@ -584,6 +592,10 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
   text-align: left;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--white-brand-color);
+  transform: translateY(0%);
+  padding: 40px 32px; 
+  background-color: var(--blue-brand-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-item:hover .cover-text-container {
   transform: translateY(0);
@@ -670,6 +682,10 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
   text-align: left;
   color: var(--back-color);
 }
+.foot-icon{
+  width: 24px;
+  height: 24px;
+}
 .social-icon-list {
   
   display: flex;
@@ -681,7 +697,11 @@ box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
   background-color: var(--blue-brand-color);
   justify-content: center;
 }
-.social-icon-link:hover,:focus{
+.social-icon-link:hover{
+  background-color: var(--hover-link-color);
+}
+
+.social-icon-link:focus{
   background-color: var(--hover-link-color);
 }
 .footer {
